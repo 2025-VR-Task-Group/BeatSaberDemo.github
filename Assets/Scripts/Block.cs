@@ -38,6 +38,7 @@ public class Block : MonoBehaviour
     {
         if (isHit) 
             return;
+        isHit = true;
 
         bool colorMatched =
          (color == BlockColor.Red && saberTag == "RedSaber") ||
@@ -60,15 +61,12 @@ public class Block : MonoBehaviour
 
 
             ScoreManager.score++; // add score
-            
-            Destroy(gameObject);
         } else
         {
             Debug.Log("Wrong Color! Missed.");
-            Destroy(gameObject);
         }
 
-        isHit = true;
+        Destroy(gameObject);
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
