@@ -1,2 +1,20 @@
 fileFormatVersion: 2
 guid: 2dc7199a991e67e4c85be61ad444d1a7
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - redHalfBlockLeftPrefab: {fileID: 3723565259849274203, guid: c651ccf08764b474386251b7e12efe62, type: 3}
+  - redHalfBlockRightPrefab: {fileID: 3723565259849274203, guid: b2ccf99e24dab894998a1f655159224c, type: 3}
+  - redHalfBlockTopPrefab: {fileID: 3723565259849274203, guid: bee26d1835c40de408079f656238250e, type: 3}
+  - redHalfBlockBottomPrefab: {fileID: 3723565259849274203, guid: 7dd6eeb6ab2640849b168237cd1d4331, type: 3}
+  - blueHalfBlockLeftPrefab: {fileID: 6916963399734159043, guid: 9a46069de05453d47945595fe4605f42, type: 3}
+  - blueHalfBlockRightPrefab: {fileID: 6916963399734159043, guid: 55a858793b4641e4e88db98cfabc6ace, type: 3}
+  - blueHalfBlockTopPrefab: {fileID: 6916963399734159043, guid: 372b98ecbdea2c841958b0ef702b835f, type: 3}
+  - blueHalfBlockBottomPrefab: {fileID: 6916963399734159043, guid: daa1e2f66e67e4e40864e9f95ef3a419, type: 3}
+  - hitSound: {fileID: 8300000, guid: ed8ba8136647bb8428631f358d90282a, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

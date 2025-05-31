@@ -157,6 +157,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 24aa5ed7fbf9acb47b66f9a62afdca41, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2647779799567556706}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 24aa5ed7fbf9acb47b66f9a62afdca41, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4382430679858387324}
   m_SourcePrefab: {fileID: 100100000, guid: 24aa5ed7fbf9acb47b66f9a62afdca41, type: 3}
 --- !u!4 &5075766458758435970 stripped
 Transform:
@@ -195,8 +198,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   color: 0
   direction: 0
-  hitEffectPrefab: {fileID: 0}
-  hitSound: {fileID: 0}
+  redHalfBlockLeftPrefab: {fileID: 1490724136122025672, guid: 5e4ec0d129c5c304785e3c546536b20f, type: 3}
+  redHalfBlockRightPrefab: {fileID: 4254531702202124404, guid: f8605c40e7ccabe4598126d947f77567, type: 3}
+  redHalfBlockTopPrefab: {fileID: 6423221574835761039, guid: 57e75c6cdbe9722438d9f87e37bb946c, type: 3}
+  redHalfBlockBottomPrefab: {fileID: 4289908144823894916, guid: 512df8dc1614e5442b0601289c7650e6, type: 3}
+  blueHalfBlockLeftPrefab: {fileID: 8194499949543681636, guid: 6ad6b35441e89754b8202b592b4f36ef, type: 3}
+  blueHalfBlockRightPrefab: {fileID: 5529256286342920608, guid: 5a5cc65d3ea77b34c84a5fba823778b5, type: 3}
+  blueHalfBlockTopPrefab: {fileID: 1360880124475240340, guid: 9c5120ed5b6197646bfc057b16b8e69f, type: 3}
+  blueHalfBlockBottomPrefab: {fileID: 5496223142743853424, guid: be96050d78e75de4ba4ec1035762eecc, type: 3}
+  splitOffset: 0.3
+  hitSound: {fileID: 8300000, guid: ed8ba8136647bb8428631f358d90282a, type: 3}
 --- !u!54 &1255763873505548117
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -245,3 +256,100 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.020000005, y: 0.020000005, z: 0.02}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!82 &4382430679858387324
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5565162844968963640}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: ed8ba8136647bb8428631f358d90282a, type: 3}
+  m_Resource: {fileID: 8300000, guid: ed8ba8136647bb8428631f358d90282a, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 2
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
