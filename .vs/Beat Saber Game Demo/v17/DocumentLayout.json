@@ -28,7 +28,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Block.cs",
               "ToolTip": "C:\\UniProject\\Beat Saber Game Demo\\Assets\\Scripts\\Block.cs",
               "RelativeToolTip": "Assets\\Scripts\\Block.cs",
-              "ViewState": "AgIAAFMAAAAAAAAAAAAzwGwAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-31T13:27:29.385Z",
               "EditorCaption": ""
@@ -43,8 +43,7 @@
               "RelativeToolTip": "Assets\\Scripts\\HalfBlock.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-31T13:25:16.808Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-31T13:25:16.808Z"
             }
           ]
         }

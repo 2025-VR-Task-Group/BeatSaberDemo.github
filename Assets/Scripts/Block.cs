@@ -1,3 +1,12 @@
+/*
+* Block.cs
+* Include the main logic of block hit
+* - Blocks and HalfBlocks Lifetime
+* - Hit Judgement
+* - Hit Sound Play
+* - Half Blocks Direction Control
+*/
+
 using UnityEngine;
 using System.Collections.Generic;
 
@@ -22,7 +31,7 @@ public class Block : MonoBehaviour
     public GameObject blueHalfBlockTopPrefab;
     public GameObject blueHalfBlockBottomPrefab;
 
-    // 统一存储每个颜色所有方向的 prefab 对应表
+    // Save Prefeb direction table
     private Dictionary<BlockColor, Dictionary<BlockDirection, (GameObject first, GameObject second)>> prefabMap;
 
     public float splitOffset = 0.3f;
@@ -88,20 +97,20 @@ public class Block : MonoBehaviour
 
         Vector3 position = transform.position;
 
-        // 先确定切割轴
+        // make sure cut axis
         Vector3 cutAxis = (direction == BlockDirection.Left || direction == BlockDirection.Right)
                           ? transform.up : transform.right;
 
         var (firstPrefab, secondPrefab) = prefabMap[color][direction];
 
-        // 生成第一半块
+        // generate first half block
         Vector3 firstPos = position + cutAxis * splitOffset;
         GameObject objFirst = Instantiate(firstPrefab, firstPos, Quaternion.LookRotation(-cutAxis, Vector3.up));
         HalfBlock halfFirst = objFirst.GetComponent<HalfBlock>();
         if (halfFirst != null)
             halfFirst.flyDirection = (cutAxis + Vector3.up * 0.5f).normalized;
 
-        // 生成第二半块
+        // generate second half block
         Vector3 secondPos = position - cutAxis * splitOffset;
         GameObject objSecond = Instantiate(secondPrefab, secondPos, Quaternion.LookRotation(cutAxis, Vector3.up));
         HalfBlock halfSecond = objSecond.GetComponent<HalfBlock>();
